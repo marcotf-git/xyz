@@ -58,7 +58,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     LocalBroadcastManager localBroadcastManager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
@@ -66,7 +66,6 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
@@ -81,7 +80,6 @@ public class ArticleListActivity extends AppCompatActivity implements
                     @Override
                     public void onRefresh() {
                         Log.i(TAG, "onRefresh called from SwipeRefreshLayout");
-
                         refresh();
                     }
                 }
@@ -91,6 +89,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null) {
+            Log.v(TAG, "refreshing");
             refresh();
         }
     }

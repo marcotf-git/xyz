@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
                 android:contentDescription="@string/app_name"
-                app:layout_scrollFlags="scroll"/>
+                app:layout_scrollFlags="scroll"
+                android:scaleType="centerCrop"/>
 
         </android.support.v7.widget.Toolbar>
 
