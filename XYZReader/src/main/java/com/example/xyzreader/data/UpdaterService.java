@@ -3,16 +3,19 @@ package com.example.xyzreader.data;
 import android.app.IntentService;
 import android.content.ContentProviderOperation;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.OperationApplicationException;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.RemoteException;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.format.Time;
 import android.util.Log;
 
 import com.example.xyzreader.remote.RemoteEndpointUtil;
+import com.example.xyzreader.ui.ArticleListActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,6 +30,7 @@ public class UpdaterService extends IntentService {
             = "com.example.xyzreader.intent.action.STATE_CHANGE";
     public static final String EXTRA_REFRESHING
             = "com.example.xyzreader.intent.extra.REFRESHING";
+
 
     public UpdaterService() {
         super(TAG);
@@ -43,8 +47,10 @@ public class UpdaterService extends IntentService {
             return;
         }
 
-        sendStickyBroadcast(
+
+        LocalBroadcastManager.getInstance(this).sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, true));
+        Log.v(TAG, "sendBroadcast true");
 
         // Don't even inspect the intent, we only do one thing, and that's fetch content.
         ArrayList<ContentProviderOperation> cpo = new ArrayList<ContentProviderOperation>();
@@ -80,7 +86,8 @@ public class UpdaterService extends IntentService {
             Log.e(TAG, "Error updating content.", e);
         }
 
-        sendStickyBroadcast(
+        LocalBroadcastManager.getInstance(this).sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, false));
+        Log.v(TAG, "sendBroadcast false");
     }
 }
