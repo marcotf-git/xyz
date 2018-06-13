@@ -13,11 +13,8 @@
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_marginLeft="@dimen/list_toolbar_side_margin"
-            android:layout_marginRight="@dimen/list_toolbar_side_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentInsetStart="72dp"
             app:layout_scrollFlags="scroll|enterAlways"
             android:layout_gravity="bottom">
 

@@ -29,7 +29,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="112dp"
+                    android:layout_height="@dimen/photo_background_protection_height"
                     android:layout_gravity="bottom"
                     android:background="@drawable/photo_background_protection" />
 
@@ -42,6 +42,7 @@
                     android:orientation="vertical"
                     android:paddingLeft="@dimen/detail_inner_horiz_margin"
                     android:paddingRight="@dimen/detail_inner_horiz_margin"
+                    android:paddingBottom="@dimen/detail_metabar_vert_padding"
                     android:paddingTop="@dimen/detail_metabar_vert_padding"
                     android:layout_marginBottom="@dimen/detail_metabar_vert_padding">
 
@@ -73,7 +74,6 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:maxWidth="@dimen/detail_card_max_width"
                 android:background="@android:color/background_light"
                 android:elevation="2dp"

@@ -7,5 +7,6 @@
     <dimen name="fab_elevation">8dp</dimen>
     <dimen name="fab_press_translation_z">12dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
+    <dimen name="photo_background_protection_height">152dp</dimen>
 
 </resources>
