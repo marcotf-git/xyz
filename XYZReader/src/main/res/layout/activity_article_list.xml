@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:contentInsetStart="72dp"
-            app:layout_scrollFlags="scroll"
+            app:layout_scrollFlags="scroll|enterAlways"
             android:layout_gravity="bottom">
 
             <ImageView
@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
                 android:contentDescription="@string/app_name"
-                app:layout_scrollFlags="scroll"
                 android:scaleType="centerCrop"/>
 
         </android.support.v7.widget.Toolbar>

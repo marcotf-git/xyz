@@ -18,7 +18,8 @@
                 android:id="@+id/photo_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/photo_placeholder">
+                android:background="@color/photo_placeholder"
+                android:elevation="8dp">
                 <!--suppress AndroidLintContentDescription -->
                 <ImageView
                     android:id="@+id/photo"
@@ -104,7 +105,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:contentDescription="@string/action_share"
         android:src="@drawable/ic_share"
-
         app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
         android:layout_gravity="bottom|end"
