@@ -86,6 +86,10 @@ public class ArticleListActivity extends AppCompatActivity implements
         );
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+        // Our improvement
+        mRecyclerView.setHasFixedSize(true);
+
         getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null) {
