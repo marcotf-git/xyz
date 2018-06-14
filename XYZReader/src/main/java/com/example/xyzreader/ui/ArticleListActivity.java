@@ -92,14 +92,16 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         getLoaderManager().initLoader(0, null, this);
 
-        if (savedInstanceState == null) {
-            Log.v(TAG, "refreshing");
+        // Our improvement
+        //if (null == savedInstanceState) {
+        if (null == savedInstanceState && null == getCallingActivity()) {
             refresh();
         }
     }
 
 
     private void refresh() {
+        Log.v(TAG, "refresh");
         // Start the intent service for update the content of the screen
         startService(new Intent(this, UpdaterService.class));
     }

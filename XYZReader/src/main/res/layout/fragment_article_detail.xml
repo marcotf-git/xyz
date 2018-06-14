@@ -21,6 +21,7 @@
                 android:background="@color/photo_placeholder"
                 android:elevation="8dp">
                 <!--suppress AndroidLintContentDescription -->
+
                 <ImageView
                     android:id="@+id/photo"
                     android:layout_width="match_parent"
