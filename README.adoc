@@ -1,6 +1,6 @@
 = XYZ Reader
 
-This repository stores code for learning purposes, for the XYZ Reader project in Udacity's Android Nanodegree.
+This repository stores code for learning purposes 📚, for the XYZ Reader project in Udacity's Android Nanodegree.
 
 
 # Credits
