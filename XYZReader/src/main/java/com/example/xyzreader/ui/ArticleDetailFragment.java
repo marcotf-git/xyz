@@ -207,7 +207,8 @@ public class ArticleDetailFragment extends Fragment implements
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
 
-        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
+        //It was commented because we will use Android default font (Roboto)
+        //bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
 
         if (mCursor != null) {
             mRootView.setAlpha(0);
@@ -238,6 +239,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             String textString = (mCursor.getString(ArticleLoader.Query.BODY)
                     .replaceAll("(\r\n|\n)", "<br/>"));
+            //Log.v(TAG, "text:" + textString);
             String textString2 = textString.replace("<br/><br/>", "\n\n");
             String textString3 = textString2.replace("<br/>", " ");
             bodyView.setText(textString3);
