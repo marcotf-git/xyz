@@ -1,3 +1,46 @@
 = XYZ Reader
 
 This repository stores code for learning purposes, for the XYZ Reader project in Udacity's Android Nanodegree.
+
+
+# Credits
+
+These are some useful links, in addition to **Udacity** itself, that were queried in this project:
+
+https://developer.android.com/design/material/
+
+https://developer.android.com/guide/topics/ui/look-and-feel/
+
+https://github.com/udacity/ud862-samples
+
+https://material.io/design/introduction/#principles
+
+https://material.io/tools/color/#!/?view.left=0&view.right=0
+
+https://material.io/design/components/app-bars-top.html#specs
+
+https://github.com/material-components/material-components-android
+
+https://fonts.google.com/?category=Serif
+
+https://fonts.google.com/?category=Sans+Serif
+
+https://developer.android.com/guide/topics/ui/look-and-feel/
+
+https://developer.android.com/guide/topics/ui/look-and-feel/themes#MaterialTheme
+
+https://developer.android.com/topic/libraries/support-library/features#material-design
+
+https://stackoverflow.com/questions/8802157/how-to-use-localbroadcastmanager
+
+https://android.jlelse.eu/local-broadcast-less-overhead-and-secure-in-android-cfa343bb05be
+
+https://medium.com/android-dev-br/design-support-library-c2c7aebd8cb
+
+https://www.youtube.com/watch?v=Kz_s6DFjTcw
+
+https://android-developers.googleblog.com/2015/05/android-design-support-library.html
+
+https://stackoverflow.com/questions/26648227/remove-title-in-toolbar-in-appcompat-v7
+
+https://www.youtube.com/watch?v=eB5WdWZoYh0
